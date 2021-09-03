@@ -1,0 +1,300 @@
+/* defolt css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.text_right {
+    text-align: right;
+}
+
+.text_left {
+    text-align: left;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.float_left {
+    float: left;
+}
+
+.float_right {
+    float: right;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.md_content {
+    max-width: 1300px;
+    margin: auto;
+}
+
+/* bagain main css */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a {
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* ============= hedar section ================= */
+.header_section {
+    background-color: #ffffff;
+    /*! padding: 24px 0px; */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.header_section .headder_logo {
+    width: 30%;
+    margin-top: 15px;
+}
+
+.header_section .headder_logo .logo_img img {
+    width: 12%;
+    float: left;
+    margin-right: 14px;
+}
+
+.header_section .headder_logo span {
+    margin-top: 8px;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.header_section .headder_logo span:hover {
+    color: #cccccc
+}
+
+.header_section .headder_menu {
+    width: 59%;
+}
+
+.header_section .headder_menu .menu_wrepper {}
+
+.header_section .headder_menu .menu_wrepper ul {
+    list-style-type: none;
+}
+
+.header_section .headder_menu .menu_wrepper ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.header_section .headder_menu .menu_wrepper ul li a {
+    color: #010101;
+    display: block;
+    padding: 29px 19px;
+    transition: .4s ease;
+}
+
+.header_section .headder_menu .menu_wrepper ul li .fas {}
+
+.header_section .headder_menu .menu_wrepper ul li a:hover {
+    color: #6278df;
+}
+
+.header_section .headder_button {
+    width: 11%;
+    margin-top: 17px;
+}
+
+/* ============= drop down menu  ================= */
+.header_section .headder_menu .menu_wrepper ul li ul {
+    width: 256px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s ease;
+}
+
+.header_section .headder_menu .menu_wrepper ul li ul li {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    display: block;
+}
+
+.header_section .headder_menu .menu_wrepper ul li ul li:last-child {
+    border: none;
+}
+
+.header_section .headder_menu .menu_wrepper ul li:hover ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+.header_section .headder_menu .menu_wrepper ul li ul li a {
+    padding: 15px;
+}
+
+.header_section .headder_menu .menu_wrepper ul li ul li a:hover {}
+
+
+
+
+.header_section .headder_button .buy_now_button {
+    border: 2px solid #6278df;
+    padding: 10px 30px;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    transition: .3s ease;
+}
+
+.header_section .headder_button .buy_now_button:hover {
+
+    background-color: #6278df;
+    color: white;
+    box-shadow: 0px 0px 18px rgba(98, 120, 223, .9);
+}
+
+/* =============  baner section ================= */
+.banar_section {
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .6)), url(https://i.ibb.co/2KzHxwW/mbr-4.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 133px 0px;
+    color: white;
+    background-repeat: no-repeat;
+    margin-top: 77px;
+}
+
+.banar_section .banar_content {}
+
+.banar_section .banar_content h2 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.banar_section .banar_content h1 {
+    font-size: 60px;
+    margin: 45px 0px;
+}
+
+.defult_btn {
+    color: #7d7d7d;
+    background-color: #fcfcfc;
+    padding: 20px 40px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 0px 10px;
+    transition: .4s ease;
+}
+
+.banar_section .defult_btn:hover {
+    background-color: #6278df;
+    color: white;
+}
+
+
+/* ============= banar buttom =================  */
+.banar_buttom {
+    padding: 100px 0px;
+    background-color: #f7f9ff;
+}
+
+.banar_buttom .video_left {
+    width: 48%;
+}
+
+.banar_buttom .video_right_content {
+    width: 48%;
+}
+
+.banar_buttom .video_right_content h2 {
+    font-size: 46px;
+    font-weight: 400;
+}
+
+.banar_buttom .video_right_content p {
+    color: #767676;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+/* ============= service section================= */
+
+.service_section {
+    padding: 100px 0px 0px 0px;
+}
+
+.service_section .service_top_content {}
+
+.service_section .service_top_content h1 {
+    font-size: 60px;
+    margin-bottom: 31px;
+    font-weight: 700;
+}
+
+.service_section .service_top_content p {
+    color: #767676;
+    font-size: 26px;
+    font-weight: 300;
+}
+
+/* service option */
+.service_item {
+    margin: 80px 0px;
+}
+
+.service_item .service_box {
+    width: 31.33%;
+    margin-left: 2%;
+    margin-bottom: 30px;
+    box-shadow: 3px 3px 24px 0px rgba(0, 0, 0, .1);
+    padding: 32px;
+}
+
+.service_item .service_box .s_icon {
+    float: left;
+    height: 170px;
+    margin-right: 22px;
+    font-size: 44px;
+    color: #6278df;
+}
+
+.service_item .service_box .s_content {}
+
+.service_item .service_box .s_content h3 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 37px;
+}
+
+.service_item .service_box .s_content p {
+    font-size: 22px;
+    color: #767676;
+    line-height: 33px;
+    font-weight: 300;
+}
